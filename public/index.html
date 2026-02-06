@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive quiz app for KidWind competition preparation" />
+    <title>QuizWind - KidWind Quiz Prep</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="app-header">
+        <h1 class="app-title">
+          <span class="icon">🌬️</span>
+          QuizWind
+        </h1>
+        <p class="app-subtitle">Master the KidWind Competition</p>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="mode-nav" id="modeNav">
+        <button class="nav-button active" data-mode="quiz">
+          <span class="icon">✓</span>
+          Quiz
+        </button>
+        <button class="nav-button" data-mode="flashcard">
+          <span class="icon">🎴</span>
+          Flashcards
+        </button>
+        <button class="nav-button" data-mode="timed">
+          <span class="icon">⏱️</span>
+          Timed
+        </button>
+        <button class="nav-button" data-mode="progress">
+          <span class="icon">📊</span>
+          Progress
+        </button>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Quiz Mode View -->
+        <div id="quizView" class="view active">
+          <div class="quiz-container">
+            <div class="question-header">
+              <span id="questionCounter" class="question-counter">Question 1 of 10</span>
+              <span id="quizScore" class="score">Score: 0</span>
+            </div>
+
+            <div id="questionCard" class="question-card">
+              <p id="questionText" class="question-text">Loading question...</p>
+
+              <div id="optionsContainer" class="options-container">
+                <!-- Options will be inserted here -->
+              </div>
+            </div>
+
+            <div id="feedbackContainer" class="feedback-container hidden">
+              <div id="feedbackMessage" class="feedback-message"></div>
+            </div>
+
+            <div class="quiz-actions">
+              <button id="nextButton" class="btn btn-primary" disabled>Next Question</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcard Mode View -->
+        <div id="flashcardView" class="view">
+          <div class="flashcard-container">
+            <div class="flashcard-header">
+              <span id="flashcardCounter" class="question-counter">Card 1 of 10</span>
+            </div>
+
+            <div id="flashcard" class="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <p id="flashcardQuestion" class="flashcard-text">Click to flip</p>
+                </div>
+                <div class="flashcard-back">
+                  <p id="flashcardAnswer" class="flashcard-text">Answer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard-actions">
+              <button id="flashcardPrev" class="btn btn-secondary">← Previous</button>
+              <button id="flashcardKnow" class="btn btn-success">Know It ✓</button>
+              <button id="flashcardReview" class="btn btn-warning">Need Review</button>
+              <button id="flashcardNext" class="btn btn-secondary">Next →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timed Mode View -->
+        <div id="timedView" class="view">
+          <div class="timed-container">
+            <div class="timed-header">
+              <span id="timedCounter" class="question-counter">Question 1 of 10</span>
+              <div id="timerDisplay" class="timer-display">
+                <span class="timer-icon">⏱️</span>
+                <span id="timerValue" class="timer-value">10</span>
+              </div>
+              <span id="timedScore" class="score">Score: 0</span>
+            </div>
+
+            <div id="timedQuestionCard" class="question-card">
+              <p id="timedQuestionText" class="question-text">Loading question...</p>
+
+              <div id="timedOptionsContainer" class="options-container">
+                <!-- Options will be inserted here -->
+              </div>
+            </div>
+
+            <div id="timedFeedbackContainer" class="feedback-container hidden">
+              <div id="timedFeedbackMessage" class="feedback-message"></div>
+            </div>
+
+            <div class="timed-actions">
+              <button id="timedStartButton" class="btn btn-primary">Start Timed Quiz</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress View -->
+        <div id="progressView" class="view">
+          <div class="progress-container">
+            <h2>Your Progress</h2>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <h3 id="totalQuestionsCount">0</h3>
+                <p>Total Questions</p>
+              </div>
+              <div class="stat-card mastered">
+                <h3 id="masteredCount">0</h3>
+                <p>Mastered</p>
+              </div>
+              <div class="stat-card learning">
+                <h3 id="learningCount">0</h3>
+                <p>Learning</p>
+              </div>
+              <div class="stat-card new">
+                <h3 id="newCount">0</h3>
+                <p>New</p>
+              </div>
+            </div>
+
+            <div class="chart-container">
+              <canvas id="progressChart"></canvas>
+            </div>
+
+            <div class="progress-actions">
+              <button id="resetProgressButton" class="btn btn-danger">Reset All Progress</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Toast notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script type="module" src="/src/shell/main.ts"></script>
+  </body>
+</html>

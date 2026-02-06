@@ -1,0 +1,282 @@
+[
+  {
+    "id": "q1",
+    "gradeLevel": "6-8",
+    "question": "What percentage of the world's electricity comes from wind power as of 2024?",
+    "options": {
+      "a": "Less than 5%",
+      "b": "About 10%",
+      "c": "About 25%",
+      "d": "More than 50%"
+    },
+    "correctAnswer": "b",
+    "topic": "wind",
+    "explanation": "Wind power provides approximately 10% of global electricity generation as of 2024."
+  },
+  {
+    "id": "q2",
+    "gradeLevel": "6-8",
+    "question": "Which part of a wind turbine converts mechanical energy into electrical energy?",
+    "options": {
+      "a": "Rotor blades",
+      "b": "Tower",
+      "c": "Generator",
+      "d": "Nacelle"
+    },
+    "correctAnswer": "c",
+    "topic": "turbine",
+    "explanation": "The generator inside the nacelle converts the mechanical rotation into electrical energy."
+  },
+  {
+    "id": "q3",
+    "gradeLevel": "6-8",
+    "question": "What is the term for the speed at which a wind turbine begins generating electricity?",
+    "options": {
+      "a": "Cut-in speed",
+      "b": "Rated speed",
+      "c": "Cut-out speed",
+      "d": "Maximum speed"
+    },
+    "correctAnswer": "a",
+    "topic": "wind",
+    "explanation": "Cut-in speed is the minimum wind speed at which the turbine starts producing electricity."
+  },
+  {
+    "id": "q4",
+    "gradeLevel": "6-8",
+    "question": "Which type of wind turbine axis is most commonly used in large-scale wind farms?",
+    "options": {
+      "a": "Vertical axis",
+      "b": "Horizontal axis",
+      "c": "Diagonal axis",
+      "d": "Floating axis"
+    },
+    "correctAnswer": "b",
+    "topic": "turbine",
+    "explanation": "Horizontal axis wind turbines (HAWT) are the most common in commercial wind farms."
+  },
+  {
+    "id": "q5",
+    "gradeLevel": "6-8",
+    "question": "What environmental benefit do wind turbines provide compared to fossil fuel power plants?",
+    "options": {
+      "a": "They require no maintenance",
+      "b": "They produce zero greenhouse gas emissions during operation",
+      "c": "They work in all weather conditions",
+      "d": "They are completely silent"
+    },
+    "correctAnswer": "b",
+    "topic": "renewable",
+    "explanation": "Wind turbines produce clean electricity with no direct greenhouse gas emissions."
+  },
+  {
+    "id": "q6",
+    "gradeLevel": "6-8",
+    "question": "How many blades do most modern commercial wind turbines have?",
+    "options": {
+      "a": "Two",
+      "b": "Three",
+      "c": "Four",
+      "d": "Five or more"
+    },
+    "correctAnswer": "b",
+    "topic": "turbine",
+    "explanation": "Three blades provide the optimal balance between efficiency and cost."
+  },
+  {
+    "id": "q7",
+    "gradeLevel": "6-8",
+    "question": "What is the purpose of the yaw mechanism in a wind turbine?",
+    "options": {
+      "a": "To increase blade speed",
+      "b": "To generate electricity",
+      "c": "To rotate the nacelle to face the wind",
+      "d": "To measure wind speed"
+    },
+    "correctAnswer": "c",
+    "topic": "turbine",
+    "explanation": "The yaw mechanism rotates the nacelle to keep the turbine facing into the wind."
+  },
+  {
+    "id": "q8",
+    "gradeLevel": "6-8",
+    "question": "Which country has the largest installed wind power capacity?",
+    "options": {
+      "a": "United States",
+      "b": "China",
+      "c": "Germany",
+      "d": "Denmark"
+    },
+    "correctAnswer": "b",
+    "topic": "wind",
+    "explanation": "China leads the world in total installed wind power capacity."
+  },
+  {
+    "id": "q9",
+    "gradeLevel": "6-8",
+    "question": "What is the capacity factor of a wind turbine?",
+    "options": {
+      "a": "The maximum power it can generate",
+      "b": "The ratio of actual to potential energy output",
+      "c": "The number of hours it operates per year",
+      "d": "The cost per kilowatt-hour"
+    },
+    "correctAnswer": "b",
+    "topic": "energy",
+    "explanation": "Capacity factor measures actual energy output compared to the theoretical maximum."
+  },
+  {
+    "id": "q10",
+    "gradeLevel": "6-8",
+    "question": "What is Betz's Law related to in wind energy?",
+    "options": {
+      "a": "The maximum wind speed a turbine can withstand",
+      "b": "The maximum theoretical efficiency of a wind turbine",
+      "c": "The minimum height for a wind turbine tower",
+      "d": "The optimal blade length"
+    },
+    "correctAnswer": "b",
+    "topic": "energy",
+    "explanation": "Betz's Law states that a turbine can capture at most 59.3% of the wind's kinetic energy."
+  },
+  {
+    "id": "q11",
+    "gradeLevel": "6-8",
+    "question": "What happens at the cut-out speed of a wind turbine?",
+    "options": {
+      "a": "The turbine starts generating power",
+      "b": "The turbine reaches maximum efficiency",
+      "c": "The turbine shuts down to prevent damage",
+      "d": "The turbine doubles its power output"
+    },
+    "correctAnswer": "c",
+    "topic": "wind",
+    "explanation": "Cut-out speed is the maximum safe wind speed; turbines shut down beyond this to prevent damage."
+  },
+  {
+    "id": "q12",
+    "gradeLevel": "6-8",
+    "question": "What is the main advantage of offshore wind farms compared to onshore wind farms?",
+    "options": {
+      "a": "Lower installation costs",
+      "b": "Easier maintenance access",
+      "c": "Stronger and more consistent winds",
+      "d": "No environmental impact"
+    },
+    "correctAnswer": "c",
+    "topic": "wind",
+    "explanation": "Offshore locations typically have stronger, more consistent winds than onshore sites."
+  },
+  {
+    "id": "q13",
+    "gradeLevel": "4-5",
+    "question": "What makes a wind turbine turn?",
+    "options": {
+      "a": "Electricity",
+      "b": "Moving air (wind)",
+      "c": "Solar power",
+      "d": "Water"
+    },
+    "correctAnswer": "b",
+    "topic": "wind",
+    "explanation": "Wind (moving air) pushes against the blades, causing them to rotate."
+  },
+  {
+    "id": "q14",
+    "gradeLevel": "4-5",
+    "question": "Wind is considered a renewable energy source because:",
+    "options": {
+      "a": "It will never run out",
+      "b": "It costs nothing to use",
+      "c": "It works everywhere",
+      "d": "It makes no noise"
+    },
+    "correctAnswer": "a",
+    "topic": "renewable",
+    "explanation": "Wind is renewable because it is constantly created by the sun's heating of Earth's surface."
+  },
+  {
+    "id": "q15",
+    "gradeLevel": "4-5",
+    "question": "What are the large spinning parts on a wind turbine called?",
+    "options": {
+      "a": "Propellers",
+      "b": "Blades",
+      "c": "Wings",
+      "d": "Fans"
+    },
+    "correctAnswer": "b",
+    "topic": "turbine",
+    "explanation": "The rotating parts that catch the wind are called blades."
+  },
+  {
+    "id": "q16",
+    "gradeLevel": "6-8",
+    "question": "What unit is typically used to measure wind turbine power output?",
+    "options": {
+      "a": "Watts or kilowatts",
+      "b": "Volts",
+      "c": "Amperes",
+      "d": "Joules"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity",
+    "explanation": "Power output is measured in watts (W), kilowatts (kW), or megawatts (MW)."
+  },
+  {
+    "id": "q17",
+    "gradeLevel": "6-8",
+    "question": "Which component inside the nacelle increases the slow rotation of the blades to a faster rotation for the generator?",
+    "options": {
+      "a": "Transformer",
+      "b": "Gearbox",
+      "c": "Controller",
+      "d": "Anemometer"
+    },
+    "correctAnswer": "b",
+    "topic": "turbine",
+    "explanation": "The gearbox increases the rotor's rotational speed to match the generator's requirements."
+  },
+  {
+    "id": "q18",
+    "gradeLevel": "6-8",
+    "question": "What is the primary cause of wind on Earth?",
+    "options": {
+      "a": "Ocean currents",
+      "b": "Uneven heating of Earth's surface by the sun",
+      "c": "Earth's rotation",
+      "d": "The moon's gravitational pull"
+    },
+    "correctAnswer": "b",
+    "topic": "wind",
+    "explanation": "Wind is created by pressure differences caused by uneven solar heating of Earth's surface."
+  },
+  {
+    "id": "q19",
+    "gradeLevel": "6-8",
+    "question": "What does an anemometer measure on a wind turbine?",
+    "options": {
+      "a": "Power output",
+      "b": "Wind speed",
+      "c": "Blade rotation speed",
+      "d": "Temperature"
+    },
+    "correctAnswer": "b",
+    "topic": "wind",
+    "explanation": "An anemometer measures wind speed to help optimize turbine performance."
+  },
+  {
+    "id": "q20",
+    "gradeLevel": "6-8",
+    "question": "What is the typical lifespan of a modern wind turbine?",
+    "options": {
+      "a": "5-10 years",
+      "b": "10-15 years",
+      "c": "20-25 years",
+      "d": "50-75 years"
+    },
+    "correctAnswer": "c",
+    "topic": "turbine",
+    "explanation": "Modern wind turbines are designed to operate for 20-25 years with proper maintenance."
+  }
+]
