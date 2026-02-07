@@ -19,8 +19,22 @@ import {
   setupFlashcard,
   updateFlashcardButtons,
 } from '../components/flashcard-view';
+import {
+  renderTimedQuestion,
+  updateTimerDisplay,
+  showTimedFeedback,
+  showTimedTimeout,
+  markTimedAnswer,
+  disableTimedOptions,
+  updateTimedScore,
+  showTimedComplete,
+  showTimedStart,
+  setupTimedView,
+} from '../components/timed-view';
 import { renderProgressStats, setupProgressView } from '../components/progress-view';
 import { createProgress, updateProgress, calculateStats } from '../core/progress-tracker';
+import { createTimer } from './timer';
+import type { Timer } from './timer';
 import type { Question, QuizSession, AnswerOption, UserProgress } from '../types';
 import questionsData from '../data/questions.json';
 
@@ -31,6 +45,13 @@ let currentSession: QuizSession | null = null;
 let userProgress: Map<string, UserProgress> = new Map();
 let isAnswered = false;
 let flashcardIndex = 0;
+
+// Timed mode state
+const TIMED_QUESTION_COUNT = 10;
+const TIMED_SECONDS_PER_QUESTION = 15;
+const FEEDBACK_DELAY_MS = 1500;
+let timedTimer: Timer | null = null;
+let timedQuestionStartTime = 0;
 
 function init(): void {
   loadUserProgress();
@@ -251,11 +272,148 @@ function handleFlashcardPrevious(): void {
   }
 }
 
-// TIMED MODE (Basic implementation)
+// TIMED MODE
 function startTimedMode(): void {
+  if (timedTimer) {
+    timedTimer.stop();
+    timedTimer = null;
+  }
+
+  showTimedStart();
+
+  setupTimedView({
+    onAnswerSelected: handleTimedAnswerSelected,
+    onStartQuiz: handleTimedStart,
+  });
+}
+
+function handleTimedStart(): void {
+  currentQuestions = selectQuestions(questionsData as Question[], {
+    mode: 'timed',
+    gradeLevel: '6-8',
+    questionCount: TIMED_QUESTION_COUNT,
+  });
+
+  currentQuestionIndex = 0;
+  currentSession = createSession('timed');
+  isAnswered = false;
+
   const startButton = requireElement<HTMLButtonElement>('timedStartButton');
-  startButton.textContent = 'Coming Soon - Timed Quiz';
   startButton.disabled = true;
+  startButton.textContent = 'In Progress...';
+
+  updateTimedScore(currentSession);
+  renderTimedCurrentQuestion();
+}
+
+function renderTimedCurrentQuestion(): void {
+  const question = currentQuestions[currentQuestionIndex];
+  if (!question) {
+    showTimedQuizComplete();
+    return;
+  }
+
+  renderTimedQuestion(question, currentQuestionIndex + 1, currentQuestions.length);
+
+  const feedbackContainer = requireElement('timedFeedbackContainer');
+  feedbackContainer.classList.add('hidden');
+
+  isAnswered = false;
+  timedQuestionStartTime = Date.now();
+
+  // Create and start timer for this question
+  if (timedTimer) {
+    timedTimer.stop();
+  }
+
+  timedTimer = createTimer({
+    duration: TIMED_SECONDS_PER_QUESTION,
+    onTick: updateTimerDisplay,
+    onComplete: handleTimedTimeout,
+  });
+
+  updateTimerDisplay(TIMED_SECONDS_PER_QUESTION);
+  timedTimer.start();
+}
+
+function handleTimedAnswerSelected(answer: AnswerOption): void {
+  if (isAnswered) return;
+
+  isAnswered = true;
+  if (timedTimer) {
+    timedTimer.stop();
+  }
+
+  const timeTaken = Math.round((Date.now() - timedQuestionStartTime) / 1000);
+  const question = currentQuestions[currentQuestionIndex];
+  const isCorrect = checkAnswer(question, answer);
+
+  markTimedAnswer(answer, question.correctAnswer);
+  showTimedFeedback(isCorrect, question.correctAnswer);
+
+  if (currentSession) {
+    currentSession = updateSession(currentSession, isCorrect, timeTaken);
+    updateTimedScore(currentSession);
+  }
+
+  const progress = userProgress.get(question.id) || createProgress(question.id);
+  const updatedProgress = updateProgress(progress, isCorrect);
+  userProgress.set(question.id, updatedProgress);
+  saveUserProgress();
+
+  // Auto-advance after feedback pause
+  setTimeout(() => {
+    currentQuestionIndex++;
+    renderTimedCurrentQuestion();
+  }, FEEDBACK_DELAY_MS);
+}
+
+function handleTimedTimeout(): void {
+  if (isAnswered) return;
+
+  isAnswered = true;
+
+  const question = currentQuestions[currentQuestionIndex];
+
+  disableTimedOptions();
+  showTimedTimeout(question.correctAnswer);
+
+  // Mark correct answer visually
+  const optionsContainer = requireElement<HTMLDivElement>('timedOptionsContainer');
+  const buttons = optionsContainer.querySelectorAll('.option-button');
+  buttons.forEach((button) => {
+    const btn = button as HTMLButtonElement;
+    if (btn.dataset.answer === question.correctAnswer) {
+      btn.classList.add('correct');
+    }
+  });
+
+  if (currentSession) {
+    currentSession = updateSession(currentSession, false, TIMED_SECONDS_PER_QUESTION);
+    updateTimedScore(currentSession);
+  }
+
+  const progress = userProgress.get(question.id) || createProgress(question.id);
+  const updatedProgress = updateProgress(progress, false);
+  userProgress.set(question.id, updatedProgress);
+  saveUserProgress();
+
+  // Auto-advance after feedback pause
+  setTimeout(() => {
+    currentQuestionIndex++;
+    renderTimedCurrentQuestion();
+  }, FEEDBACK_DELAY_MS);
+}
+
+function showTimedQuizComplete(): void {
+  if (!currentSession) return;
+
+  if (timedTimer) {
+    timedTimer.stop();
+    timedTimer = null;
+  }
+
+  showTimedComplete(currentSession);
 }
 
 // PROGRESS VIEW
