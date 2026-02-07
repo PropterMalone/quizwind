@@ -24,7 +24,7 @@ export function renderTimedQuestion(
   // Ensure question card is visible (not replaced by completion screen)
   questionText.textContent = question.question;
   questionCard.style.display = '';
-  questionCounter.textContent = `Question ${questionNumber} of ${total}`;
+  questionCounter.innerHTML = `Question ${questionNumber} of ${total} <span class="grade-badge grade-${question.gradeLevel}">Gr ${question.gradeLevel}</span>`;
 
   clearElement(optionsContainer);
 

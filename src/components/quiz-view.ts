@@ -16,7 +16,7 @@ export function renderQuestion(question: Question, questionNumber: number, total
   const optionsContainer = requireElement<HTMLDivElement>('optionsContainer');
 
   questionText.textContent = question.question;
-  questionCounter.textContent = `Question ${questionNumber} of ${total}`;
+  questionCounter.innerHTML = `Question ${questionNumber} of ${total} <span class="grade-badge grade-${question.gradeLevel}">Gr ${question.gradeLevel}</span>`;
 
   clearElement(optionsContainer);
 

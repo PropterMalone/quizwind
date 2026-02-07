@@ -2,7 +2,7 @@
  * Type definitions for QuizWind application
  */
 
-export type GradeLevel = '4-5' | '6-8';
+export type GradeLevel = '4-5' | '6-8' | '9-12';
 export type AnswerOption = 'a' | 'b' | 'c' | 'd';
 export type MasteryLevel = 'new' | 'learning' | 'mastered';
 export type QuizMode = 'quiz' | 'flashcard' | 'timed';

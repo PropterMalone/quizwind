@@ -7,7 +7,7 @@ import type { Question, AnswerOption, QuizSession, QuizMode } from '../types';
 
 export interface QuizConfig {
   mode: QuizMode;
-  gradeLevel?: '4-5' | '6-8' | 'all';
+  gradeLevel?: '4-5' | '6-8' | '9-12' | 'all';
   topic?: string;
   questionCount?: number;
 }

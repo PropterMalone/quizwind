@@ -176,6 +176,32 @@ body {
   color: var(--color-text-secondary);
 }
 
+/* Grade Level Badges */
+.grade-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: var(--spacing-sm);
+}
+
+.grade-4-5 {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+}
+
+.grade-6-8 {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--color-primary-dark);
+}
+
+.grade-9-12 {
+  background: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+}
+
 .score {
   font-weight: 700;
   font-size: 1.2rem;

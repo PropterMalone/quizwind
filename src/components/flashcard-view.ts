@@ -20,7 +20,7 @@ export function renderFlashcard(question: Question, index: number, total: number
 
   flashcardQuestion.textContent = question.question;
   flashcardAnswer.textContent = question.options[question.correctAnswer];
-  flashcardCounter.textContent = `Card ${index + 1} of ${total}`;
+  flashcardCounter.innerHTML = `Card ${index + 1} of ${total} <span class="grade-badge grade-${question.gradeLevel}">Gr ${question.gradeLevel}</span>`;
 
   // Reset flip state
   flashcard.classList.remove('flipped');

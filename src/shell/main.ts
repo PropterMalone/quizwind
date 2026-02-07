@@ -112,7 +112,6 @@ function setupNavigation(): void {
 function startQuizMode(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'quiz',
-    gradeLevel: '6-8',
     questionCount: 10,
   });
 
@@ -209,7 +208,6 @@ function showQuizComplete(): void {
 function startFlashcardMode(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'flashcard',
-    gradeLevel: '6-8',
   });
 
   flashcardIndex = 0;
@@ -290,7 +288,6 @@ function startTimedMode(): void {
 function handleTimedStart(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'timed',
-    gradeLevel: '6-8',
     questionCount: TIMED_QUESTION_COUNT,
   });
 

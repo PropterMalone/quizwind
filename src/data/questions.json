@@ -1,282 +1,912 @@
 [
   {
-    "id": "q1",
-    "gradeLevel": "6-8",
-    "question": "What percentage of the world's electricity comes from wind power as of 2024?",
+    "id": "g45-1",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is a renewable source of energy?",
     "options": {
-      "a": "Less than 5%",
-      "b": "About 10%",
-      "c": "About 25%",
+      "a": "Fossil fuels",
+      "b": "Wind power",
+      "c": "Nuclear energy",
+      "d": "Natural gas"
+    },
+    "correctAnswer": "b",
+    "topic": "renewable"
+  },
+  {
+    "id": "g45-2",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is an example of a non-renewable energy source?",
+    "options": {
+      "a": "Solar power",
+      "b": "Geothermal energy",
+      "c": "Coal",
+      "d": "Hydroelectric power"
+    },
+    "correctAnswer": "c",
+    "topic": "electricity"
+  },
+  {
+    "id": "g45-3",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is a disadvantage of using fossil fuels?",
+    "options": {
+      "a": "Fossil fuels are renewable",
+      "b": "Fossil fuels produce clean energy",
+      "c": "Fossil fuels release harmful pollutants into the air",
+      "d": "Fossil fuels have no disadvantages!"
+    },
+    "correctAnswer": "c",
+    "topic": "fossil fuels"
+  },
+  {
+    "id": "g45-4",
+    "gradeLevel": "4-5",
+    "question": "Which type of energy comes from the movement of water?",
+    "options": {
+      "a": "Solar power",
+      "b": "Nuclear energy",
+      "c": "Hydroelectric power",
+      "d": "Geothermal energy"
+    },
+    "correctAnswer": "c",
+    "topic": "energy"
+  },
+  {
+    "id": "g45-5",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is an advantage of using nuclear power?",
+    "options": {
+      "a": "Nuclear power plants produce no waste",
+      "b": "Nuclear power is a renewable energy source",
+      "c": "Nuclear power plants have a low carbon footprint",
+      "d": "Nuclear power plants can be dangerous if they malfunction"
+    },
+    "correctAnswer": "c",
+    "topic": "general"
+  },
+  {
+    "id": "g45-6",
+    "gradeLevel": "4-5",
+    "question": "Which type of energy comes from the heat of the Earth's core?",
+    "options": {
+      "a": "Solar power",
+      "b": "Nuclear energy",
+      "c": "Fossil fuels",
+      "d": "Geothermal energy"
+    },
+    "correctAnswer": "d",
+    "topic": "energy"
+  },
+  {
+    "id": "g45-7",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is a disadvantage of using solar power?",
+    "options": {
+      "a": "Solar power is a non-renewable source of energy",
+      "b": "Solar panels can be expensive to install",
+      "c": "Solar power can increase your home’s electricity bill",
+      "d": "Solar power produces harmful pollutants"
+    },
+    "correctAnswer": "b",
+    "topic": "solar"
+  },
+  {
+    "id": "g45-9",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is NOT a type of wind turbine?",
+    "options": {
+      "a": "Horizontal-axis",
+      "b": "Tilted-axis",
+      "c": "Savonius",
+      "d": "Darrieus"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-10",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is a disadvantage of using wind power?",
+    "options": {
+      "a": "Wind turbines are expensive to build",
+      "b": "Wind power produces harmful pollutants",
+      "c": "Wind power is a non-renewable source of energy",
+      "d": "Wind turbines require maintenance every week"
+    },
+    "correctAnswer": "a",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-11",
+    "gradeLevel": "4-5",
+    "question": "What is a wind farm?",
+    "options": {
+      "a": "A group of wind turbines used to generate electricity",
+      "b": "A place where people go to fly kites",
+      "c": "A type of amusement park ride",
+      "d": "A farm where crops are grown with wind power"
+    },
+    "correctAnswer": "a",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-12",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is an example of kinetic energy?",
+    "options": {
+      "a": "A battery",
+      "b": "A wind turbine",
+      "c": "A light bulb",
+      "d": "A book on a shelf"
+    },
+    "correctAnswer": "b",
+    "topic": "electricity"
+  },
+  {
+    "id": "g45-13",
+    "gradeLevel": "4-5",
+    "question": "What is the purpose of a wind vane?",
+    "options": {
+      "a": "To measure wind speed",
+      "b": "To measure wind direction",
+      "c": "To generate wind power",
+      "d": "To store wind energy"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-14",
+    "gradeLevel": "4-5",
+    "question": "What is a rotor?",
+    "options": {
+      "a": "The part of a wind turbine that spins",
+      "b": "The part of a wind turbine that converts wind energy to electricity",
+      "c": "The part of a wind turbine that generates wind",
+      "d": "The part of a wind turbine that stores electricity"
+    },
+    "correctAnswer": "a",
+    "topic": "general"
+  },
+  {
+    "id": "g45-16",
+    "gradeLevel": "4-5",
+    "question": "Which of the following is NOT a factor that affects the amount of electricity produced by a wind turbine?",
+    "options": {
+      "a": "Wind speed",
+      "b": "Blade length",
+      "c": "Temperature",
+      "d": "Air density"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-17",
+    "gradeLevel": "4-5",
+    "question": "What is a photovoltaic cell?",
+    "options": {
+      "a": "A device that converts sunlight into electricity",
+      "b": "A device that measures wind speed",
+      "c": "A type of wind turbine blade",
+      "d": "A device that captures sound waves to produce electricity"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g45-18",
+    "gradeLevel": "4-5",
+    "question": "You want to light your home in the most energy efficient way. Which type of light do you use?",
+    "options": {
+      "a": "LEDs",
+      "b": "Traditional incandescent bulbs",
+      "c": "Kerosene lamp",
+      "d": "Candle"
+    },
+    "correctAnswer": "a",
+    "topic": "energy"
+  },
+  {
+    "id": "g45-20",
+    "gradeLevel": "4-5",
+    "question": "What gas is the primary cause of global climate change?",
+    "options": {
+      "a": "CO 2",
+      "b": "H 2 O",
+      "c": "O 2",
+      "d": "H 2"
+    },
+    "correctAnswer": "a",
+    "topic": "climate"
+  },
+  {
+    "id": "g45-22",
+    "gradeLevel": "4-5",
+    "question": "Most of the electricity generated in the US is produced by burning this fuel.",
+    "options": {
+      "a": "Oil",
+      "b": "Coal",
+      "c": "Natural Gas",
+      "d": "Wood"
+    },
+    "correctAnswer": "c",
+    "topic": "electricity"
+  },
+  {
+    "id": "g45-23",
+    "gradeLevel": "4-5",
+    "question": "The cross section of most wind turbine blades are shaped like __________",
+    "options": {
+      "a": "Rectangles",
+      "b": "Teardrops or airfoils",
+      "c": "Whale fins",
+      "d": "Circle"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-25",
+    "gradeLevel": "4-5",
+    "question": "Of these renewable energy sources which one does not depend directly on radiant energy from the Sun?",
+    "options": {
+      "a": "Biomass",
+      "b": "Wind",
+      "c": "Solar",
+      "d": "Geothermal"
+    },
+    "correctAnswer": "b",
+    "topic": "renewable"
+  },
+  {
+    "id": "g45-27",
+    "gradeLevel": "4-5",
+    "question": "If you needed light to read a book, which kind of light bulb would probably use the least amount of electricity?",
+    "options": {
+      "a": "LED bulb",
+      "b": "Incandescent bulb",
+      "c": "Compact Fluorescent Bulb (CFL)",
+      "d": "Halogen bulb"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g45-28",
+    "gradeLevel": "4-5",
+    "question": "Which source of energy is nonrenewable?",
+    "options": {
+      "a": "Wind",
+      "b": "Solar",
+      "c": "Biomass",
+      "d": "Coal"
+    },
+    "correctAnswer": "d",
+    "topic": "renewable"
+  },
+  {
+    "id": "g45-29",
+    "gradeLevel": "4-5",
+    "question": "Yawing is when a wind turbine:",
+    "options": {
+      "a": "Experiences stress from the force of the wind",
+      "b": "Turns to face the wind",
+      "c": "Creates noise as its blades rotate",
+      "d": "Slows down when wind speed decreases"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g45-30",
+    "gradeLevel": "4-5",
+    "question": "What kills the most birds?",
+    "options": {
+      "a": "Cats",
+      "b": "Glass Windows",
+      "c": "Wind Turbines",
+      "d": "Cars"
+    },
+    "correctAnswer": "a",
+    "topic": "general"
+  },
+  {
+    "id": "g68-1",
+    "gradeLevel": "6-8",
+    "question": "Which type of energy is derived from the Earth's internal heat?",
+    "options": {
+      "a": "Solar",
+      "b": "Hydroelectric",
+      "c": "Geothermal",
+      "d": "Nuclear"
+    },
+    "correctAnswer": "c",
+    "topic": "energy"
+  },
+  {
+    "id": "g68-2",
+    "gradeLevel": "6-8",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": {
+      "a": "Carbon dioxide",
+      "b": "Nitrogen",
+      "c": "Oxygen",
+      "d": "Argon"
+    },
+    "correctAnswer": "b",
+    "topic": "general"
+  },
+  {
+    "id": "g68-3",
+    "gradeLevel": "6-8",
+    "question": "What is the unit of measurement for electrical resistance?",
+    "options": {
+      "a": "Watt",
+      "b": "Volt",
+      "c": "Ohm",
+      "d": "Ampere"
+    },
+    "correctAnswer": "c",
+    "topic": "general"
+  },
+  {
+    "id": "g68-4",
+    "gradeLevel": "6-8",
+    "question": "What type of circuit allows electricity to flow through it?",
+    "options": {
+      "a": "Closed circuit",
+      "b": "Open circuit",
+      "c": "Short circuit",
+      "d": "Circuit circus"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g68-5",
+    "gradeLevel": "6-8",
+    "question": "What are currently the primary sources of electricity in the U.S.?",
+    "options": {
+      "a": "Coal and natural gas",
+      "b": "Wind and solar",
+      "c": "Hydroelectric and nuclear",
+      "d": "Magic and whimsy"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g68-6",
+    "gradeLevel": "6-8",
+    "question": "How does a generator work?",
+    "options": {
+      "a": "By creating energy from scratch",
+      "b": "By converting mechanical energy into electrical energy",
+      "c": "By converting electrical energy into mechanical energy",
+      "d": "None of the above"
+    },
+    "correctAnswer": "b",
+    "topic": "general"
+  },
+  {
+    "id": "g68-7",
+    "gradeLevel": "6-8",
+    "question": "As of 2022, renewable energy sources accounted for approximately what percent of U.S. primary energy consumption?",
+    "options": {
+      "a": "7%",
+      "b": "13%",
+      "c": "33%",
       "d": "More than 50%"
     },
     "correctAnswer": "b",
-    "topic": "wind",
-    "explanation": "Wind power provides approximately 10% of global electricity generation as of 2024."
+    "topic": "renewable"
   },
   {
-    "id": "q2",
+    "id": "g68-8",
     "gradeLevel": "6-8",
-    "question": "Which part of a wind turbine converts mechanical energy into electrical energy?",
+    "question": "What are the units we use to measure the rate at which energy flows?",
     "options": {
-      "a": "Rotor blades",
-      "b": "Tower",
-      "c": "Generator",
-      "d": "Nacelle"
+      "a": "Volts",
+      "b": "Amps",
+      "c": "Watts",
+      "d": "Feet"
     },
     "correctAnswer": "c",
-    "topic": "turbine",
-    "explanation": "The generator inside the nacelle converts the mechanical rotation into electrical energy."
+    "topic": "energy"
   },
   {
-    "id": "q3",
+    "id": "g68-9",
     "gradeLevel": "6-8",
-    "question": "What is the term for the speed at which a wind turbine begins generating electricity?",
+    "question": "What are the environmental benefits of generating electricity using wind and solar power?",
     "options": {
-      "a": "Cut-in speed",
-      "b": "Rated speed",
-      "c": "Cut-out speed",
-      "d": "Maximum speed"
+      "a": "They emit less greenhouse gasses than fossil fuels",
+      "b": "They are renewable energy sources",
+      "c": "They do not impact air quality the way fossil fuels do",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-10",
+    "gradeLevel": "6-8",
+    "question": "What causes wind?",
+    "options": {
+      "a": "The rotation of the Earth",
+      "b": "The sun's heat",
+      "c": "The movement of air from high pressure to low pressure",
+      "d": "None of the above"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-11",
+    "gradeLevel": "6-8",
+    "question": "What is electrical storage?",
+    "options": {
+      "a": "A way to store electrical energy for later use",
+      "b": "A way to convert electrical energy into mechanical energy",
+      "c": "A way to convert mechanical energy into electrical energy",
+      "d": "None of the above"
     },
     "correctAnswer": "a",
-    "topic": "wind",
-    "explanation": "Cut-in speed is the minimum wind speed at which the turbine starts producing electricity."
+    "topic": "general"
   },
   {
-    "id": "q4",
+    "id": "g68-12",
     "gradeLevel": "6-8",
-    "question": "Which type of wind turbine axis is most commonly used in large-scale wind farms?",
+    "question": "What is the difference between energy and power?",
     "options": {
-      "a": "Vertical axis",
-      "b": "Horizontal axis",
-      "c": "Diagonal axis",
-      "d": "Floating axis"
+      "a": "Energy is the amount of work that can be done over a period of time, while power is the rate at which work is done.",
+      "b": "Energy is the rate at which work is done, while power is the amount of work that can be done over a period of time.",
+      "c": "Energy and power are interchangeable terms.",
+      "d": "None of the above."
     },
-    "correctAnswer": "b",
-    "topic": "turbine",
-    "explanation": "Horizontal axis wind turbines (HAWT) are the most common in commercial wind farms."
+    "correctAnswer": "a",
+    "topic": "energy"
   },
   {
-    "id": "q5",
+    "id": "g68-13",
     "gradeLevel": "6-8",
-    "question": "What environmental benefit do wind turbines provide compared to fossil fuel power plants?",
+    "question": "How can storage impact the “variability” of renewable energy resources?",
     "options": {
-      "a": "They require no maintenance",
-      "b": "They produce zero greenhouse gas emissions during operation",
-      "c": "They work in all weather conditions",
-      "d": "They are completely silent"
+      "a": "By storing excess energy for use during times of low production",
+      "b": "By decreasing energy production during peak production times",
+      "c": "By increasing energy production during peak production times",
+      "d": "None of the above."
     },
-    "correctAnswer": "b",
-    "topic": "renewable",
-    "explanation": "Wind turbines produce clean electricity with no direct greenhouse gas emissions."
+    "correctAnswer": "a",
+    "topic": "renewable"
   },
   {
-    "id": "q6",
+    "id": "g68-15",
     "gradeLevel": "6-8",
-    "question": "How many blades do most modern commercial wind turbines have?",
+    "question": "What are some of the careers and jobs that renewable energy directly produces?",
     "options": {
-      "a": "Two",
-      "b": "Three",
-      "c": "Four",
-      "d": "Five or more"
+      "a": "Solar panel installer, wind turbine technician, and electrical engineer",
+      "b": "Coal miner, oil rig worker, and refinery operator",
+      "c": "Gas station attendant, HVAC technician, and truck driver",
+      "d": "Bank teller, accountant, and teacher"
     },
-    "correctAnswer": "b",
-    "topic": "turbine",
-    "explanation": "Three blades provide the optimal balance between efficiency and cost."
+    "correctAnswer": "a",
+    "topic": "renewable"
   },
   {
-    "id": "q7",
+    "id": "g68-16",
     "gradeLevel": "6-8",
-    "question": "What is the purpose of the yaw mechanism in a wind turbine?",
+    "question": "Which of the following is a standard type of wind turbine blade design?",
     "options": {
-      "a": "To increase blade speed",
-      "b": "To generate electricity",
-      "c": "To rotate the nacelle to face the wind",
-      "d": "To measure wind speed"
+      "a": "Flat",
+      "b": "Braided",
+      "c": "Corkscrew",
+      "d": "Curved"
+    },
+    "correctAnswer": "d",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-17",
+    "gradeLevel": "6-8",
+    "question": "Which of the following is a renewable source of energy that is not dependent on weather conditions?",
+    "options": {
+      "a": "Wind power",
+      "b": "Solar power",
+      "c": "Geothermal energy",
+      "d": "Coal"
     },
     "correctAnswer": "c",
-    "topic": "turbine",
-    "explanation": "The yaw mechanism rotates the nacelle to keep the turbine facing into the wind."
+    "topic": "renewable"
   },
   {
-    "id": "q8",
+    "id": "g68-18",
     "gradeLevel": "6-8",
-    "question": "Which country has the largest installed wind power capacity?",
+    "question": "How does a wind turbine work?",
     "options": {
-      "a": "United States",
-      "b": "China",
+      "a": "It spins a rotor that turns a generator to produce electricity",
+      "b": "It uses the electrical energy to create wind",
+      "c": "It converts air pressure into heat",
+      "d": "It captures the sound of the wind to make music"
+    },
+    "correctAnswer": "a",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-22",
+    "gradeLevel": "6-8",
+    "question": "As of January 2015, wind power provides ______  % of the electricity used in the US.",
+    "options": {
+      "a": "10%",
+      "b": "20%",
+      "c": "5%",
+      "d": "1%"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-23",
+    "gradeLevel": "6-8",
+    "question": "Which country generates (as a percentage) the most wind energy?",
+    "options": {
+      "a": "China",
+      "b": "Australia",
       "c": "Germany",
       "d": "Denmark"
     },
-    "correctAnswer": "b",
-    "topic": "wind",
-    "explanation": "China leads the world in total installed wind power capacity."
+    "correctAnswer": "d",
+    "topic": "wind"
   },
   {
-    "id": "q9",
+    "id": "g68-24",
     "gradeLevel": "6-8",
+    "question": "Which of the following is NOT a type of wind turbine?",
+    "options": {
+      "a": "Savonius",
+      "b": "Cumulus",
+      "c": "Darrieus",
+      "d": "HAWT"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-25",
+    "gradeLevel": "6-8",
+    "question": "Wind turbine nacelles are normally over 250 feet or more above the ground. This is done to:",
+    "options": {
+      "a": "Allow room for plants and trees to grow beneath them",
+      "b": "Reduce noise for people who live and work nearby",
+      "c": "Take advantage of faster, less turbulent winds",
+      "d": "Reduce the number of birds that might be killed by the blades"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-20",
+    "gradeLevel": "6-8",
+    "question": "The cross section of most wind turbine blades are shaped like __________",
+    "options": {
+      "a": "Rectangles",
+      "b": "Teardrops or airfoils",
+      "c": "Whale fins",
+      "d": "Circle"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-26",
+    "gradeLevel": "6-8",
+    "question": "How tall are modern utility scale (2014/15) wind turbines?",
+    "options": {
+      "a": "40 m",
+      "b": "300 m",
+      "c": "90 m",
+      "d": "20 m"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-27",
+    "gradeLevel": "6-8",
+    "question": "If you needed light to read a book, which kind of light bulb would probably use the least amount of electricity?",
+    "options": {
+      "a": "LED bulb",
+      "b": "Incandescent bulb",
+      "c": "Compact Fluorescent Bulb (CFL)",
+      "d": "Halogen bulb"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g68-28",
+    "gradeLevel": "6-8",
+    "question": "Yawing is when a wind turbine:",
+    "options": {
+      "a": "Experiences stress from the force of the wind",
+      "b": "Turns to face the wind",
+      "c": "Creates noise as its blades rotate",
+      "d": "Slows down when wind speed decreases"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g68-29",
+    "gradeLevel": "6-8",
+    "question": "What kills the most birds?",
+    "options": {
+      "a": "Cats",
+      "b": "Glass Windows",
+      "c": "Wind Turbines",
+      "d": "Cars"
+    },
+    "correctAnswer": "a",
+    "topic": "general"
+  },
+  {
+    "id": "g912-1",
+    "gradeLevel": "9-12",
+    "question": "From what sources does the U.S. currently generate most of its electricity?",
+    "options": {
+      "a": "Coal and natural gas",
+      "b": "Nuclear and hydropower",
+      "c": "Wind and solar",
+      "d": "Geothermal and biomass"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g912-2",
+    "gradeLevel": "9-12",
+    "question": "How does a generator work?",
+    "options": {
+      "a": "By converting electrical energy into mechanical energy",
+      "b": "By converting mechanical energy into electrical energy",
+      "c": "By converting heat energy into electrical energy",
+      "d": "By converting light energy into electrical energy"
+    },
+    "correctAnswer": "b",
+    "topic": "general"
+  },
+  {
+    "id": "g912-3",
+    "gradeLevel": "9-12",
+    "question": "How do we move electricity from power plants to our homes?",
+    "options": {
+      "a": "Through power lines and transformers",
+      "b": "By trucking it in from the power plant",
+      "c": "By using underground pipes",
+      "d": "By satellite transmission"
+    },
+    "correctAnswer": "a",
+    "topic": "electricity"
+  },
+  {
+    "id": "g912-4",
+    "gradeLevel": "9-12",
+    "question": "What is distributed generation?",
+    "options": {
+      "a": "A method of generating electricity where multiple small-scale generators are spread throughout a community or region",
+      "b": "A method of generating electricity where a single large-scale generator is used to power multiple small communities",
+      "c": "A method of generating electricity where a single large-scale generator is used to power a single community",
+      "d": "None of the above"
+    },
+    "correctAnswer": "a",
+    "topic": "general"
+  },
+  {
+    "id": "g912-5",
+    "gradeLevel": "9-12",
+    "question": "What are the units used to measure electrical energy consumption?",
+    "options": {
+      "a": "Amps",
+      "b": "Watts",
+      "c": "Kilowatt-hours",
+      "d": "Newtons"
+    },
+    "correctAnswer": "c",
+    "topic": "energy"
+  },
+  {
+    "id": "g912-6",
+    "gradeLevel": "9-12",
+    "question": "What is the difference between energy and power?",
+    "options": {
+      "a": "Energy is the amount of work that can be done over a period of time, while power is the rate at which work is done",
+      "b": "Energy is the rate at which work is done, while power is the amount of work that can be done over a period of time",
+      "c": "Energy and power are interchangeable terms",
+      "d": "None of the above"
+    },
+    "correctAnswer": "a",
+    "topic": "energy"
+  },
+  {
+    "id": "g912-8",
+    "gradeLevel": "9-12",
+    "question": "What is the role of the inverter in a photovoltaic solar power system?",
+    "options": {
+      "a": "To convert DC electricity from the solar panels into AC electricity for use in homes and businesses",
+      "b": "To increase the voltage of the DC electricity from the solar panels to match the grid voltage",
+      "c": "To store excess electricity generated by the solar panels in batteries",
+      "d": "To protect the solar panels from overcharging and overvoltage conditions"
+    },
+    "correctAnswer": "a",
+    "topic": "solar"
+  },
+  {
+    "id": "g912-9",
+    "gradeLevel": "9-12",
+    "question": "What is the name of the process by which a wind turbine adjusts the angle of its blades to optimize power output?",
+    "options": {
+      "a": "Pitch control",
+      "b": "Yaw control",
+      "c": "Power optimization",
+      "d": "Wind diving"
+    },
+    "correctAnswer": "a",
+    "topic": "wind"
+  },
+  {
+    "id": "g912-10",
+    "gradeLevel": "9-12",
     "question": "What is the capacity factor of a wind turbine?",
     "options": {
-      "a": "The maximum power it can generate",
-      "b": "The ratio of actual to potential energy output",
-      "c": "The number of hours it operates per year",
-      "d": "The cost per kilowatt-hour"
-    },
-    "correctAnswer": "b",
-    "topic": "energy",
-    "explanation": "Capacity factor measures actual energy output compared to the theoretical maximum."
-  },
-  {
-    "id": "q10",
-    "gradeLevel": "6-8",
-    "question": "What is Betz's Law related to in wind energy?",
-    "options": {
-      "a": "The maximum wind speed a turbine can withstand",
-      "b": "The maximum theoretical efficiency of a wind turbine",
-      "c": "The minimum height for a wind turbine tower",
-      "d": "The optimal blade length"
-    },
-    "correctAnswer": "b",
-    "topic": "energy",
-    "explanation": "Betz's Law states that a turbine can capture at most 59.3% of the wind's kinetic energy."
-  },
-  {
-    "id": "q11",
-    "gradeLevel": "6-8",
-    "question": "What happens at the cut-out speed of a wind turbine?",
-    "options": {
-      "a": "The turbine starts generating power",
-      "b": "The turbine reaches maximum efficiency",
-      "c": "The turbine shuts down to prevent damage",
-      "d": "The turbine doubles its power output"
-    },
-    "correctAnswer": "c",
-    "topic": "wind",
-    "explanation": "Cut-out speed is the maximum safe wind speed; turbines shut down beyond this to prevent damage."
-  },
-  {
-    "id": "q12",
-    "gradeLevel": "6-8",
-    "question": "What is the main advantage of offshore wind farms compared to onshore wind farms?",
-    "options": {
-      "a": "Lower installation costs",
-      "b": "Easier maintenance access",
-      "c": "Stronger and more consistent winds",
-      "d": "No environmental impact"
-    },
-    "correctAnswer": "c",
-    "topic": "wind",
-    "explanation": "Offshore locations typically have stronger, more consistent winds than onshore sites."
-  },
-  {
-    "id": "q13",
-    "gradeLevel": "4-5",
-    "question": "What makes a wind turbine turn?",
-    "options": {
-      "a": "Electricity",
-      "b": "Moving air (wind)",
-      "c": "Solar power",
-      "d": "Water"
-    },
-    "correctAnswer": "b",
-    "topic": "wind",
-    "explanation": "Wind (moving air) pushes against the blades, causing them to rotate."
-  },
-  {
-    "id": "q14",
-    "gradeLevel": "4-5",
-    "question": "Wind is considered a renewable energy source because:",
-    "options": {
-      "a": "It will never run out",
-      "b": "It costs nothing to use",
-      "c": "It works everywhere",
-      "d": "It makes no noise"
+      "a": "The average actual energy output of the turbine divided by its maximum possible energy output",
+      "b": "The maximum amount of energy a turbine can produce in a year",
+      "c": "The minimum wind speed required for the turbine to start generating electricity",
+      "d": "The time required for the turbine to pay for itself through energy generation"
     },
     "correctAnswer": "a",
-    "topic": "renewable",
-    "explanation": "Wind is renewable because it is constantly created by the sun's heating of Earth's surface."
+    "topic": "wind"
   },
   {
-    "id": "q15",
-    "gradeLevel": "4-5",
-    "question": "What are the large spinning parts on a wind turbine called?",
+    "id": "g912-11",
+    "gradeLevel": "9-12",
+    "question": "What is the formula for torque?",
     "options": {
-      "a": "Propellers",
-      "b": "Blades",
-      "c": "Wings",
-      "d": "Fans"
+      "a": "T = mg",
+      "b": "T = rFsin( 𝚹 )",
+      "c": "T = F/A",
+      "d": "T = P/t"
     },
     "correctAnswer": "b",
-    "topic": "turbine",
-    "explanation": "The rotating parts that catch the wind are called blades."
+    "topic": "general"
   },
   {
-    "id": "q16",
-    "gradeLevel": "6-8",
-    "question": "What unit is typically used to measure wind turbine power output?",
+    "id": "g912-12",
+    "gradeLevel": "9-12",
+    "question": "Which type of power plant converts the most energy from its fuel into electricity (highest capacity factor)?",
     "options": {
-      "a": "Watts or kilowatts",
-      "b": "Volts",
-      "c": "Amperes",
-      "d": "Joules"
-    },
-    "correctAnswer": "a",
-    "topic": "electricity",
-    "explanation": "Power output is measured in watts (W), kilowatts (kW), or megawatts (MW)."
-  },
-  {
-    "id": "q17",
-    "gradeLevel": "6-8",
-    "question": "Which component inside the nacelle increases the slow rotation of the blades to a faster rotation for the generator?",
-    "options": {
-      "a": "Transformer",
-      "b": "Gearbox",
-      "c": "Controller",
-      "d": "Anemometer"
-    },
-    "correctAnswer": "b",
-    "topic": "turbine",
-    "explanation": "The gearbox increases the rotor's rotational speed to match the generator's requirements."
-  },
-  {
-    "id": "q18",
-    "gradeLevel": "6-8",
-    "question": "What is the primary cause of wind on Earth?",
-    "options": {
-      "a": "Ocean currents",
-      "b": "Uneven heating of Earth's surface by the sun",
-      "c": "Earth's rotation",
-      "d": "The moon's gravitational pull"
-    },
-    "correctAnswer": "b",
-    "topic": "wind",
-    "explanation": "Wind is created by pressure differences caused by uneven solar heating of Earth's surface."
-  },
-  {
-    "id": "q19",
-    "gradeLevel": "6-8",
-    "question": "What does an anemometer measure on a wind turbine?",
-    "options": {
-      "a": "Power output",
-      "b": "Wind speed",
-      "c": "Blade rotation speed",
-      "d": "Temperature"
-    },
-    "correctAnswer": "b",
-    "topic": "wind",
-    "explanation": "An anemometer measures wind speed to help optimize turbine performance."
-  },
-  {
-    "id": "q20",
-    "gradeLevel": "6-8",
-    "question": "What is the typical lifespan of a modern wind turbine?",
-    "options": {
-      "a": "5-10 years",
-      "b": "10-15 years",
-      "c": "20-25 years",
-      "d": "50-75 years"
+      "a": "Coal-fired power plant",
+      "b": "Natural gas-fired power plant",
+      "c": "Nuclear power plant",
+      "d": "Hydroelectric power plant"
     },
     "correctAnswer": "c",
-    "topic": "turbine",
-    "explanation": "Modern wind turbines are designed to operate for 20-25 years with proper maintenance."
+    "topic": "electricity"
+  },
+  {
+    "id": "g912-13",
+    "gradeLevel": "9-12",
+    "question": "How much energy is required to lift a 50-kg mass to a height of 10 meters? (using the equation force*displacement with the assumption that gravity = 9.81 m/s 2 ).",
+    "options": {
+      "a": "490 J",
+      "b": "4900 J",
+      "c": "49000 J",
+      "d": "490000 J"
+    },
+    "correctAnswer": "b",
+    "topic": "energy"
+  },
+  {
+    "id": "g912-14",
+    "gradeLevel": "9-12",
+    "question": "How does the U.S. financially subsidize renewable energy resources?",
+    "options": {
+      "a": "Tax credits",
+      "b": "Grants",
+      "c": "Loans and rebates",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d",
+    "topic": "renewable"
+  },
+  {
+    "id": "g912-15",
+    "gradeLevel": "9-12",
+    "question": "What are some of the ways we transform energy from one form to another?",
+    "options": {
+      "a": "By using a generator to convert mechanical energy into electrical energy.",
+      "b": "By using a transformer to change the voltage of electrical energy.",
+      "c": "By using a battery to convert chemical energy into electrical energy.",
+      "d": "All of the above."
+    },
+    "correctAnswer": "d",
+    "topic": "energy"
+  },
+  {
+    "id": "g912-16",
+    "gradeLevel": "9-12",
+    "question": "Which of the following is NOT a type of wind turbine?",
+    "options": {
+      "a": "Horizontal-axis",
+      "b": "Tilted-axis",
+      "c": "Savonius",
+      "d": "Darrieus"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g912-17",
+    "gradeLevel": "9-12",
+    "question": "What are some of the physical and social impacts of solar and wind farm construction and operation?",
+    "options": {
+      "a": "Noise pollution",
+      "b": "Impact on wildlife",
+      "c": "Land use conflicts",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d",
+    "topic": "wind"
+  },
+  {
+    "id": "g912-21",
+    "gradeLevel": "9-12",
+    "question": "Which of the following is NOT a type of wind turbine?",
+    "options": {
+      "a": "Savonius",
+      "b": "Cumulus",
+      "c": "Darrieus",
+      "d": "HAWT"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g912-23",
+    "gradeLevel": "9-12",
+    "question": "Yawing is when a wind turbine:",
+    "options": {
+      "a": "Experiences stress from the force of the wind",
+      "b": "Turns to face the wind",
+      "c": "Creates noise as its blades rotate",
+      "d": "Slows down when wind speed decreases"
+    },
+    "correctAnswer": "b",
+    "topic": "wind"
+  },
+  {
+    "id": "g912-24",
+    "gradeLevel": "9-12",
+    "question": "What kills the most birds?",
+    "options": {
+      "a": "Cats",
+      "b": "Glass Windows",
+      "c": "Wind Turbines",
+      "d": "Cars"
+    },
+    "correctAnswer": "a",
+    "topic": "general"
+  },
+  {
+    "id": "g912-25",
+    "gradeLevel": "9-12",
+    "question": "Where was the first offshore wind farm in the US constructed?",
+    "options": {
+      "a": "Massachusetts",
+      "b": "California",
+      "c": "Rhode Island",
+      "d": "Oregon"
+    },
+    "correctAnswer": "c",
+    "topic": "wind"
   }
 ]
