@@ -7,13 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"src/**/*.{ts,css,html}\" \"public/**/*.html\"",
-    "format:check": "prettier --check \"src/**/*.{ts,css,html}\" \"public/**/*.html\"",
+    "format": "prettier --write \"src/**/*.{ts,css,html}\" \"index.html\"",
+    "format:check": "prettier --check \"src/**/*.{ts,css,html}\" \"index.html\"",
     "validate": "npm run format && npm run lint && npm run type-check && npm test"
   },
   "keywords": [
