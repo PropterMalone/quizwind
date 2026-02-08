@@ -49,10 +49,30 @@ describe('quiz-engine', () => {
     it('should filter by grade level', () => {
       const result = selectQuestions(mockQuestions, {
         mode: 'quiz',
-        gradeLevel: '6-8',
+        enabledGradeLevels: ['6-8'],
       });
       expect(result).toHaveLength(2);
       expect(result.every((q) => q.gradeLevel === '6-8')).toBe(true);
+    });
+
+    it('should filter by multiple grade levels', () => {
+      const withHighSchool: Question[] = [
+        ...mockQuestions,
+        {
+          id: 'q4',
+          gradeLevel: '9-12',
+          question: 'Test question 4?',
+          options: { a: 'A4', b: 'B4', c: 'C4', d: 'D4' },
+          correctAnswer: 'd',
+          topic: 'energy',
+        },
+      ];
+      const result = selectQuestions(withHighSchool, {
+        mode: 'quiz',
+        enabledGradeLevels: ['4-5', '6-8'],
+      });
+      expect(result).toHaveLength(3);
+      expect(result.every((q) => q.gradeLevel !== '9-12')).toBe(true);
     });
 
     it('should filter by topic', () => {

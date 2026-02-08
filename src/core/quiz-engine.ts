@@ -3,11 +3,11 @@
  * Functional Core - no side effects
  */
 
-import type { Question, AnswerOption, QuizSession, QuizMode } from '../types';
+import type { Question, AnswerOption, QuizSession, QuizMode, GradeLevel } from '../types';
 
 export interface QuizConfig {
   mode: QuizMode;
-  gradeLevel?: '4-5' | '6-8' | '9-12' | 'all';
+  enabledGradeLevels?: GradeLevel[];
   topic?: string;
   questionCount?: number;
 }
@@ -18,9 +18,9 @@ export interface QuizConfig {
 export function selectQuestions(allQuestions: Question[], config: QuizConfig): Question[] {
   let filtered = [...allQuestions];
 
-  // Filter by grade level
-  if (config.gradeLevel && config.gradeLevel !== 'all') {
-    filtered = filtered.filter((q) => q.gradeLevel === config.gradeLevel);
+  // Filter by enabled grade levels
+  if (config.enabledGradeLevels && config.enabledGradeLevels.length > 0) {
+    filtered = filtered.filter((q) => config.enabledGradeLevels!.includes(q.gradeLevel));
   }
 
   // Filter by topic

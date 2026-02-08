@@ -127,6 +127,62 @@ body {
   border-color: var(--color-primary-dark);
 }
 
+/* Grade Level Filter */
+.grade-filter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.grade-filter-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.grade-toggle {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--color-border);
+  background: transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-height: 44px;
+  opacity: 0.4;
+}
+
+.grade-toggle.active {
+  opacity: 1;
+  border-color: currentColor;
+}
+
+.grade-toggle[data-grade='4-5'] {
+  color: #059669;
+}
+
+.grade-toggle[data-grade='6-8'] {
+  color: var(--color-primary-dark);
+}
+
+.grade-toggle[data-grade='9-12'] {
+  color: #7c3aed;
+}
+
+.grade-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.grade-toggle .grade-badge {
+  margin-left: 0;
+  font-size: 0.875rem;
+}
+
 /* Views */
 .view {
   display: none;

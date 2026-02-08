@@ -3,7 +3,13 @@
  */
 
 import { requireElement } from './dom';
-import { loadProgress, saveProgress, clearProgress } from './storage';
+import {
+  loadProgress,
+  saveProgress,
+  clearProgress,
+  loadGradeLevels,
+  saveGradeLevels,
+} from './storage';
 import { selectQuestions, createSession, updateSession, checkAnswer } from '../core/quiz-engine';
 import {
   renderQuestion,
@@ -35,7 +41,7 @@ import { renderProgressStats, setupProgressView } from '../components/progress-v
 import { createProgress, updateProgress, calculateStats } from '../core/progress-tracker';
 import { createTimer } from './timer';
 import type { Timer } from './timer';
-import type { Question, QuizSession, AnswerOption, UserProgress } from '../types';
+import type { Question, QuizSession, AnswerOption, UserProgress, GradeLevel } from '../types';
 import questionsData from '../data/questions.json';
 
 // Application state
@@ -45,6 +51,7 @@ let currentSession: QuizSession | null = null;
 let userProgress: Map<string, UserProgress> = new Map();
 let isAnswered = false;
 let flashcardIndex = 0;
+let enabledGradeLevels: GradeLevel[] = ['4-5', '6-8', '9-12'];
 
 // Timed mode state
 const TIMED_QUESTION_COUNT = 10;
@@ -55,8 +62,70 @@ let timedQuestionStartTime = 0;
 
 function init(): void {
   loadUserProgress();
+  loadGradeLevelPrefs();
+  setupGradeFilter();
   setupNavigation();
   startQuizMode();
+}
+
+function loadGradeLevelPrefs(): void {
+  const result = loadGradeLevels();
+  if (result.success && result.data) {
+    enabledGradeLevels = result.data;
+  }
+}
+
+function setupGradeFilter(): void {
+  const toggles = document.querySelectorAll('.grade-toggle');
+
+  // Sync UI with loaded preferences
+  toggles.forEach((toggle) => {
+    const grade = (toggle as HTMLElement).dataset.grade as GradeLevel;
+    if (enabledGradeLevels.includes(grade)) {
+      toggle.classList.add('active');
+    } else {
+      toggle.classList.remove('active');
+    }
+  });
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const grade = (toggle as HTMLElement).dataset.grade as GradeLevel;
+
+      if (toggle.classList.contains('active')) {
+        // Don't allow disabling the last one
+        if (enabledGradeLevels.length <= 1) return;
+        enabledGradeLevels = enabledGradeLevels.filter((g) => g !== grade);
+        toggle.classList.remove('active');
+      } else {
+        enabledGradeLevels = [...enabledGradeLevels, grade];
+        toggle.classList.add('active');
+      }
+
+      saveGradeLevels(enabledGradeLevels);
+      restartCurrentMode();
+    });
+  });
+}
+
+function restartCurrentMode(): void {
+  const activeNav = document.querySelector('.nav-button.active') as HTMLElement | null;
+  const mode = activeNav?.dataset.mode ?? 'quiz';
+
+  switch (mode) {
+    case 'quiz':
+      startQuizMode();
+      break;
+    case 'flashcard':
+      startFlashcardMode();
+      break;
+    case 'timed':
+      startTimedMode();
+      break;
+    case 'progress':
+      startProgressView();
+      break;
+  }
 }
 
 function loadUserProgress(): void {
@@ -112,6 +181,7 @@ function setupNavigation(): void {
 function startQuizMode(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'quiz',
+    enabledGradeLevels,
     questionCount: 10,
   });
 
@@ -208,6 +278,7 @@ function showQuizComplete(): void {
 function startFlashcardMode(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'flashcard',
+    enabledGradeLevels,
   });
 
   flashcardIndex = 0;
@@ -288,6 +359,7 @@ function startTimedMode(): void {
 function handleTimedStart(): void {
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'timed',
+    enabledGradeLevels,
     questionCount: TIMED_QUESTION_COUNT,
   });
 

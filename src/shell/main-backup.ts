@@ -104,7 +104,7 @@ function startQuizMode(): void {
   // Select questions for quiz (grade 6-8, 10 questions)
   currentQuestions = selectQuestions(questionsData as Question[], {
     mode: 'quiz',
-    gradeLevel: '6-8',
+    enabledGradeLevels: ['6-8'],
     questionCount: 10,
   });
 

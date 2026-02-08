@@ -1,5 +1,12 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { saveProgress, loadProgress, clearProgress, isStorageAvailable } from './storage';
+import {
+  saveProgress,
+  loadProgress,
+  clearProgress,
+  isStorageAvailable,
+  saveGradeLevels,
+  loadGradeLevels,
+} from './storage';
 import type { UserProgress } from '../types';
 
 describe('storage', () => {
@@ -89,6 +96,46 @@ describe('storage', () => {
       const result = loadProgress();
       expect(result.success).toBe(false);
       expect(result.error).toBeTruthy();
+    });
+  });
+
+  describe('saveGradeLevels', () => {
+    it('should save grade levels to localStorage', () => {
+      const result = saveGradeLevels(['4-5', '6-8']);
+      expect(result.success).toBe(true);
+      expect(localStorage.getItem('quizwind_grade_levels')).toBe('["4-5","6-8"]');
+    });
+  });
+
+  describe('loadGradeLevels', () => {
+    it('should return all levels when nothing saved', () => {
+      const result = loadGradeLevels();
+      expect(result.success).toBe(true);
+      expect(result.data).toEqual(['4-5', '6-8', '9-12']);
+    });
+
+    it('should load saved levels', () => {
+      saveGradeLevels(['6-8']);
+      const result = loadGradeLevels();
+      expect(result.data).toEqual(['6-8']);
+    });
+
+    it('should filter out invalid values', () => {
+      localStorage.setItem('quizwind_grade_levels', '["6-8","bogus","4-5"]');
+      const result = loadGradeLevels();
+      expect(result.data).toEqual(['6-8', '4-5']);
+    });
+
+    it('should default to all levels on invalid JSON', () => {
+      localStorage.setItem('quizwind_grade_levels', 'not json');
+      const result = loadGradeLevels();
+      expect(result.data).toEqual(['4-5', '6-8', '9-12']);
+    });
+
+    it('should default to all levels when stored array is empty after filtering', () => {
+      localStorage.setItem('quizwind_grade_levels', '["invalid"]');
+      const result = loadGradeLevels();
+      expect(result.data).toEqual(['4-5', '6-8', '9-12']);
     });
   });
 
