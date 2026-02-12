@@ -5,6 +5,7 @@
 
 import type { Question, AnswerOption, QuizSession } from '../types';
 import { requireElement, clearElement, createElement } from '../shell/dom';
+import { createQuestionFigure } from './question-figure';
 
 export interface TimedViewCallbacks {
   onAnswerSelected: (answer: AnswerOption) => void;
@@ -22,8 +23,18 @@ export function renderTimedQuestion(
   const questionCard = requireElement<HTMLDivElement>('timedQuestionCard');
 
   // Ensure question card is visible (not replaced by completion screen)
-  questionText.textContent = question.question;
   questionCard.style.display = '';
+
+  // Remove previous figure if any
+  questionCard.querySelector('.question-figure')?.remove();
+
+  // Insert figure before question text if present
+  const figure = createQuestionFigure(question);
+  if (figure) {
+    questionCard.insertBefore(figure, questionText);
+  }
+
+  questionText.textContent = question.question;
   questionCounter.innerHTML = `Question ${questionNumber} of ${total} <span class="grade-badge grade-${question.gradeLevel}">Gr ${question.gradeLevel}</span>`;
 
   clearElement(optionsContainer);

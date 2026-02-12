@@ -20,6 +20,7 @@ export interface Question {
   correctAnswer: AnswerOption;
   explanation?: string;
   topic?: string;
+  figureUrl?: string;
 }
 
 export interface UserProgress {

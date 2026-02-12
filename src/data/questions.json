@@ -908,5 +908,103 @@
     },
     "correctAnswer": "c",
     "topic": "wind"
+  },
+  {
+    "id": "g45-19",
+    "gradeLevel": "4-5",
+    "question": "What is the name of the part of the turbine shown by letter \"C\" in the diagram?",
+    "options": {
+      "a": "Gearbox",
+      "b": "Generator",
+      "c": "Tower",
+      "d": "Nacelle"
+    },
+    "correctAnswer": "a",
+    "topic": "wind",
+    "figureUrl": "/figures/turbine-diagram.png"
+  },
+  {
+    "id": "g45-21",
+    "gradeLevel": "4-5",
+    "question": "According to the graph, since 2000, wind capacity in the United States has been:",
+    "options": {
+      "a": "Increasing",
+      "b": "Decreasing",
+      "c": "Staying the same",
+      "d": "This graph is showing something else entirely!"
+    },
+    "correctAnswer": "a",
+    "topic": "wind",
+    "figureUrl": "/figures/wind-capacity-graph.png"
+  },
+  {
+    "id": "g68-19",
+    "gradeLevel": "6-8",
+    "question": "What is the name of the part of the turbine shown by letter \"C\" in the diagram?",
+    "options": {
+      "a": "Gearbox",
+      "b": "Generator",
+      "c": "Tower",
+      "d": "Nacelle"
+    },
+    "correctAnswer": "a",
+    "topic": "wind",
+    "figureUrl": "/figures/turbine-diagram.png"
+  },
+  {
+    "id": "g68-21",
+    "gradeLevel": "6-8",
+    "question": "What is the name of the part of the turbine shown by letter \"D\" in the diagram?",
+    "options": {
+      "a": "Gearbox",
+      "b": "Generator",
+      "c": "Tower",
+      "d": "Nacelle"
+    },
+    "correctAnswer": "d",
+    "topic": "wind",
+    "figureUrl": "/figures/turbine-diagram.png"
+  },
+  {
+    "id": "g912-18",
+    "gradeLevel": "9-12",
+    "question": "What is the name of the part of the turbine shown by letter \"D\" in the diagram?",
+    "options": {
+      "a": "Gearbox",
+      "b": "Generator",
+      "c": "Tower",
+      "d": "Nacelle"
+    },
+    "correctAnswer": "d",
+    "topic": "wind",
+    "figureUrl": "/figures/turbine-diagram.png"
+  },
+  {
+    "id": "g912-19",
+    "gradeLevel": "9-12",
+    "question": "Using solely the information on the following map, what parts of the United States may be the best locations for wind turbine construction?",
+    "options": {
+      "a": "Alaska",
+      "b": "The East Coast",
+      "c": "The West Coast",
+      "d": "The Central and Midwest regions"
+    },
+    "correctAnswer": "d",
+    "topic": "wind",
+    "figureUrl": "/figures/us-wind-map.png"
+  },
+  {
+    "id": "g912-20",
+    "gradeLevel": "9-12",
+    "question": "Using the following map, which state had the greatest installed wind capacity in 2018?",
+    "options": {
+      "a": "Alaska",
+      "b": "California",
+      "c": "Texas",
+      "d": "Oklahoma"
+    },
+    "correctAnswer": "c",
+    "topic": "wind",
+    "figureUrl": "/figures/us-wind-map.png"
   }
 ]

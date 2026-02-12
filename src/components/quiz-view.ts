@@ -4,6 +4,7 @@
 
 import type { Question, AnswerOption, QuizSession } from '../types';
 import { requireElement, clearElement, createElement } from '../shell/dom';
+import { createQuestionFigure } from './question-figure';
 
 export interface QuizViewCallbacks {
   onAnswerSelected: (answer: AnswerOption) => void;
@@ -14,6 +15,16 @@ export function renderQuestion(question: Question, questionNumber: number, total
   const questionText = requireElement<HTMLParagraphElement>('questionText');
   const questionCounter = requireElement<HTMLSpanElement>('questionCounter');
   const optionsContainer = requireElement<HTMLDivElement>('optionsContainer');
+  const questionCard = requireElement<HTMLDivElement>('questionCard');
+
+  // Remove previous figure if any
+  questionCard.querySelector('.question-figure')?.remove();
+
+  // Insert figure before question text if present
+  const figure = createQuestionFigure(question);
+  if (figure) {
+    questionCard.insertBefore(figure, questionText);
+  }
 
   questionText.textContent = question.question;
   questionCounter.innerHTML = `Question ${questionNumber} of ${total} <span class="grade-badge grade-${question.gradeLevel}">Gr ${question.gradeLevel}</span>`;

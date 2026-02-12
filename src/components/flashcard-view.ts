@@ -4,6 +4,7 @@
 
 import type { Question } from '../types';
 import { requireElement } from '../shell/dom';
+import { createQuestionFigure } from './question-figure';
 
 export interface FlashcardCallbacks {
   onKnowIt: () => void;
@@ -17,6 +18,16 @@ export function renderFlashcard(question: Question, index: number, total: number
   const flashcardAnswer = requireElement<HTMLParagraphElement>('flashcardAnswer');
   const flashcardCounter = requireElement<HTMLSpanElement>('flashcardCounter');
   const flashcard = requireElement<HTMLDivElement>('flashcard');
+
+  // Remove previous figure if any
+  const flashcardFront = flashcard.querySelector('.flashcard-front');
+  flashcardFront?.querySelector('.question-figure')?.remove();
+
+  // Insert figure before question text if present
+  const figure = createQuestionFigure(question);
+  if (figure) {
+    flashcardFront?.insertBefore(figure, flashcardQuestion);
+  }
 
   flashcardQuestion.textContent = question.question;
   flashcardAnswer.textContent = question.options[question.correctAnswer];
